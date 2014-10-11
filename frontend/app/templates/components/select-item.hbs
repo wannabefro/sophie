@@ -1,0 +1,5 @@
+{{#if editing}}
+{{view Ember.Select content=colors value=selectedColor}} {{view Ember.Select content=items value=selectedItem}}
+{{else}}
+<strong>{{selectedColor}} {{selectedItem}}</strong><a class="close" {{action resetItem}}>×</a>
+{{/if}}

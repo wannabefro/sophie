@@ -1,0 +1,22 @@
+<div class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    {{link-to 'Sophie' 'application' classNames='navbar-brand'}}
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      {{#link-li}}{{link-to 'Stories' 'stories.index'}}{{/link-li}}
+      {{#link-li}}{{link-to 'New Story' 'stories.new'}}{{/link-li}}
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    </ul>
+  </div><!--/.nav-collapse -->
+</div><!--/.container-fluid -->
+</div>
+
